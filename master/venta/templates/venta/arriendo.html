@@ -1,0 +1,306 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arriendos  MasterBikes</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+   
+    <link rel="stylesheet" href=" {%static 'venta/css/style.css' %} ">
+    <link rel="stylesheet" href=" {%static 'venta/css/estilo formulario.css' %} ">
+    <link rel="stylesheet" href=" {%static 'venta/css/nuevo_estilo_formulario_menu.css' %} ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body style="background-color:#a1a8a79a;">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=" {%url 'index' %} ">MasterBikes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href=" {% url 'login' %} ">Iniciar sesion</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href=" {%url 'compra' %} ">Compra</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href=" {%url 'reparacion' %} ">reparacion</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="  {%url 'arriendo' %} ">arriendo</a>
+                    </li>
+                    
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+<div class="related-products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bar">
+                        <h2>Arriendos para ti</h2>
+                        <img alt="" src=" {%static 'venta/img/bar.jpg' %} ">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="s_product">
+                            <img alt="" src=" {%static 'venta/img/bici1.jpg' %} ">
+                            <div class="s_overlay"></div>
+                          
+                            <h3>Bicicleta de Cyclocross</h3>
+                            <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>Arrendar</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="rate">
+                                    
+                                    <p><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><span><i aria-hidden="true" class="fa fa-star"></i></span></p>
+                                    <h5>$100.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="s_product">
+                            <img alt="" src=" {%static 'venta/img/bici2.jpg' %}  ">
+                            <div class="s_overlay"></div>
+                            <h3>Bicicleta Urbanas</h3>
+                            <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>Arrendar</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="rate">
+                                    
+                                    <p><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><span><i aria-hidden="true" class="fa fa-star"></i></span></p>
+                                    <h5>$150.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="s_product">
+                            <img alt="" src=" {%static 'venta/img/bici3.jpg' %} ">
+                            <div class="s_overlay"></div>
+                            <h3>Bicicleta Híbridas</h3>
+                            <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>Arrendar</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="rate">
+                                    <h3>Bicicleta de BMX.</h3>
+                                    <p><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i></p>
+                                    <h5>$100.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="s_product">
+                            <img alt="" src=" {%static 'venta/img/bici4.jpg' %} ">
+                            <div class="s_overlay"></div>
+                            <h2>Nueva!</h2>
+                            <h3>Bicicleta Plegables</h3>
+                            <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>Arrendar</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="rate">
+                                    <h3>Pocket Tee</h3>
+                                    <p><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i></p>
+                                    <h5>$90.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<section class="latest-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="bar">
+                <h2>Ultimos Productos</h2>
+                    <img src=" {%static 'venta/img/bar.jpg' %} " alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-single">
+                    <div class="s_product">
+                        <img alt="" src=" {%static 'venta/img/bici5.jpg' %}">
+                        <div class="s_overlay"></div>
+                        <h2>Nueva!</h2>
+                        <h3>Bicicleta Plegables</h3>
+                        <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>añadir al carrito</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="prodact-s-text">
+                                <h3>Bicicleta de Ruta</h3>
+                                <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><span><i class="fa fa-star" aria-hidden="true"></i></span></p>
+                                <h5>$400.000</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-single">
+                    <div class="s_product">
+                        <img alt="" src=" {%static 'venta/img/bici6.jpg' %}">
+                        <div class="s_overlay"></div>
+                        <h2>Nueva!</h2>
+                        <h3>Bicicleta Plegables</h3>
+                        <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>añadir al carrito</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="prodact-s-text">
+                                <h3>Bicicleta de BMX.</h3>
+                                <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><span><i class="fa fa-star" aria-hidden="true"></i></span></p>
+                                <h5>$1.000.000</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-single">
+                    <div class="s_product">
+                        <img alt="" src=" {%static 'venta/img/bici7.jpg' %}">
+                        <div class="s_overlay"></div>
+                        <h2>Nueva!</h2>
+                        <h3>Bicicleta Plegables</h3>
+                        <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>añadir al carrito</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="prodact-s-text">
+                                <h3>Bicicletas Urbanase</h3>
+                                <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                                <h5>$700.000</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-single">
+                    <div class="s_product">
+                        <img alt="" src=" {%static 'venta/img/bici8.jpg' %}">
+                        <div class="s_overlay"></div>
+                        <h2>Nueva!</h2>
+                        <h3>Bicicleta Plegables</h3>
+                        <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>añadir al carrito</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="prodact-s-text">
+                                <h3>Bicicleta de Triatlón </h3>
+                                <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                                <h5>$500.000</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+<footer>
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>INFORMATION</h2>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                </div>
+                <div class="col-md-4 center">
+                    <h2>INFORMATION</h2>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-contact">
+                        <h2>CONTACT US</h2>
+                        <a href="#"><p><i class="fa fa-map-marker" aria-hidden="true"></i>Rangpur , Bangladesh</p></a>
+                        <a href="#"><p><i class="fa fa-phone" aria-hidden="true"></i>+88 01761070282</p></a>
+                        <a href="#"><p><i class="fa fa-envelope" aria-hidden="true"></i>sshahriar458@gmail.com</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+       <div class="footer_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="copy_txt">
+                        <p>Copyright © 2014  Designed by <span>shawon</span></p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="footer_logo">
+                        <img src="img/fedex.png">
+                        <img src="img/master-card.png">
+                        <img src="img/paypal.png">
+                        <img src="img/visa.png">
+                        <img src="img/american-express.png">
+                        <img src="img/dhl.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.bxSlider.js"></script>
+<script>
+   
+    </script>  
+<script src="js/active.js"></script>  
+</body>
+</html>
